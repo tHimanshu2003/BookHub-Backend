@@ -13,12 +13,6 @@ app.use(cors({
     credentials: true 
 }))
 
-app.add_middleware(
-    allow_origins=origins,
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
 // routes
 const bookRoutes = require('./src/books/book.route');
 const orderRoutes = require("./src/orders/order.route")
